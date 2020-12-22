@@ -40,7 +40,7 @@ export default {
       DeleteProduct(id).then(res => {
         console.log(res)
         Toast('delete success')
-        this.$router("/products")
+        this.$router.push("/products")
       })
     }
   },
