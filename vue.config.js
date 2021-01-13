@@ -40,6 +40,7 @@ module.exports = {
   // },
   devServer: {
     port: port,
+    // open: true, // 启动项目是打开浏览器
     proxy: {
       '/rest/': {
         target: 'http://127.0.0.1:3001',

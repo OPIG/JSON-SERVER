@@ -13,7 +13,11 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
+    // /* webpackChunkName: "about" */ 这段 注释 的意思是打包时候会以 about.[hash].js 中间为 哈希值 的方式去打包 命名文件名称
+    props: {
+      name: 'test'
+    }
   },
   {
     path: '/products',
@@ -38,8 +42,10 @@ const routes = [
   },
   {
     path: '/echart',
+    // 访问 /chart 路径也可以跳转到echart页
+    alias: '/chart',
     name: 'Echart',
-    component: () => import('@/views/Echart.vue')
+    component: () => import(/* webpackChunkName:'Echart' */ '@/views/Echart.vue')
   }
 ]
 

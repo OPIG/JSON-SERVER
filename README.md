@@ -28,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+vue inspect > output.js  // 输出vue中webpack的默认配置到output.js中
