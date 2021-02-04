@@ -8,7 +8,7 @@ server.use(middlewares)
 // 调用这个之后就可以正常使用patch方法
 server.use(jsonServer.bodyParser)
 server.use(router)
-server.listen('3001', () => {
+server.listen('3004', (res,req) => {
   console.log('welcome to use json server!')
 })
 
@@ -16,7 +16,6 @@ server.get('/users', (req, res) => {
   res.jsonp(req.query)
 })
 
-debugger
 server.get('/products', (req, res) => {
   res.jsonp(req.query)
 })
@@ -31,9 +30,9 @@ server.delete('/products/:id', (req, res) => {
 
 server.patch('/products/:id', (req, res) => {
   console.log(req)
-  // res.jsonp(req.query)
+  res.jsonp(req.query)
 })
 server.post('/products', (req, res) => {
   console.log(req)
-  // res.jsonp(req.query)
+  res.jsonp(req.query)
 })

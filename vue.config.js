@@ -43,7 +43,7 @@ module.exports = {
     // open: true, // 启动项目是打开浏览器
     proxy: {
       '/rest/': {
-        target: 'http://127.0.0.1:3001',
+        target: 'http://127.0.0.1:3004',
         changeOrigin: true,
         pathRewrite: {
           '^/rest/': '/'
