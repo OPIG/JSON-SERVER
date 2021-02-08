@@ -21,36 +21,93 @@
       "id": 3
     }
   ],
-  "products": [
+  "products":[
     {
-      "id": 3,
-      "name": "hat-red-gray",
-      "amount": 131
-    },
-    {
-      "id": 1,
-      "name": "hat-blue-yellow",
-      "amount": 101
-    },
-    {
-      "id": 2,
-      "name": "hat-yellow",
-      "amount": 10
-    },
-    {
-      "id": 4,
-      "name": "hat-green",
-      "amount": 30
-    },
-    {
-      "id": 5,
-      "name": "hat-white",
-      "amount": 50
-    },
-    {
-      "id": 6,
-      "name": "hat-black",
-      "amount": 60
-    }
-  ]
+    "name": "hats",
+    "product": [
+      {
+        "id": 3,
+        "name": "hat-red-gray",
+        "amount": 131
+      },
+      {
+        "id": 1,
+        "name": "hat-blue-yellow",
+        "amount": 101
+      },
+      {
+        "id": 2,
+        "name": "hat-yellow",
+        "amount": 10
+      },
+      {
+        "id": 4,
+        "name": "hat-green",
+        "amount": 30
+      },
+      {
+        "id": 5,
+        "name": "hat-white",
+        "amount": 50
+      },
+      {
+        "id": 6,
+        "name": "hat-black",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "name": "T-Shirt",
+    "product": [
+      {
+        "id": 3,
+        "name": "gray T-shirt",
+        "amount": 131,
+        "desc": "design by ex Nick pre-designer"
+      },
+      {
+        "id": 1,
+        "name": "yellow  T-shirt",
+        "amount": 101
+      },
+      {
+        "id": 2,
+        "name": "red  T-shirt",
+        "amount": 10
+      },
+      {
+        "id": 4,
+        "name": "green  T-shirt",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "name": "T-Shirt",
+    "product": [
+      {
+        "id": 3,
+        "name": "gray T-shirt",
+        "amount": 131,
+        "desc": "design by ex Nick pre-designer"
+      },
+      {
+        "id": 1,
+        "name": "yellow  T-shirt",
+        "amount": 101
+      },
+      {
+        "id": 2,
+        "name": "red  T-shirt",
+        "amount": 10
+      },
+      {
+        "id": 4,
+        "name": "green  T-shirt",
+        "amount": 30
+      }
+    ]
+  }
+]
 }

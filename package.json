@@ -12,12 +12,13 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "better-scroll": "^2.2.0",
     "core-js": "^3.6.5",
     "mescroll.js": "^1.4.2",
     "vconsole": "^3.3.4",
-    "vue": "^3.0.0",
+    "vue": "^2.6.11",
     "vue-loader-v16": "^16.0.0-beta.5.4",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -35,6 +36,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-0",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
   }
 }

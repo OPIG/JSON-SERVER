@@ -37,7 +37,10 @@ export default {
         console.log(res)
         Toast('添加成功')
       })
-    }
+    },
+    goBack () {
+      this.$router.go(-1)
+    },
   }
 }
 </script>

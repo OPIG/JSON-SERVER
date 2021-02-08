@@ -1,15 +1,22 @@
 <template>
-  <div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/products">Product</router-link> |
-      <router-link to="/addProduct">addProduct</router-link> |
-      <router-link to="/echart">Echart</router-link>
-    </div>
+  <div class="content">
+    <app-header></app-header>
+    <app-nav></app-nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+import Header from './components/header/Header.vue'
+import Nav from './components/nav/Nav.vue'
+export default {
+  name: 'app',
+  components: {
+    'app-header': Header,
+    'app-nav': Nav
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

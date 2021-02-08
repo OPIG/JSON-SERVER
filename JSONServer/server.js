@@ -20,8 +20,10 @@ server.get('/products', (req, res) => {
   res.jsonp(req.query)
 })
 
-server.get('/products/:id', (req, res) => {
-  res.jsonp(req.query)
+server.get('/products/:name/:id', (req, res) => {
+  debugger
+  console.log(req)
+ // res.jsonp(req.query)
 })
 
 server.delete('/products/:id', (req, res) => {

@@ -21,11 +21,11 @@ export function GetProductsList () {
   })
 }
 
-export function GetProductDetail (id) {
+export function GetProductDetail (name, id) {
   return axios({
     method: 'get',
     // url: 'http://localhost:3001/products/' + id
-    url: '/rest/products/' + id
+    url: '/rest/products/' + name + '/' + id
   })
 }
 

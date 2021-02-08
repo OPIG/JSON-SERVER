@@ -26,9 +26,9 @@ export default {
     }
   },
   methods: {
-    getProductDetail (id) {
+    getProductDetail (category, id) {
       let $this = this
-      GetProductDetail(id).then(res => {
+      GetProductDetail(category, id).then(res => {
         console.log(res)
         $this.product = res.data
       })
@@ -45,7 +45,8 @@ export default {
     }
   },
   created() {
-    this.getProductDetail(this.$route.params.id)
+    console.log(this.$route.params);
+    this.getProductDetail(this.$route.params.name, this.$route.params.id)
   }
 }
 </script>

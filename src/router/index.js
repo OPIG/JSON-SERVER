@@ -1,4 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHistory } from 'vue-router'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 const routes = [
@@ -26,7 +28,7 @@ const routes = [
     component: () => import('@/views/Products.vue')
   },
   {
-    path: '/product/:id',
+    path: '/product/:name/:id',
     name: 'ProductDetail',
     component: () => import('@/views/ProductDetail.vue')
   },
@@ -49,9 +51,12 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+Vue.use(VueRouter)
+const router = new VueRouter({
+  // history: createWebHistory(process.env.BASE_URL),
+  mode: 'history',
+  routes,
+  linkActiveClass: 'active'
 })
 
 export default router
